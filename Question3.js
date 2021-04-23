@@ -21,5 +21,5 @@ empGreaterThan30.forEach(emp => console.log(emp.getFullName()));
 
 
 // Employee with full name and born after 2000
-let empBornAfter2000 = employeeArray.filter(emp => emp.getFullName() && new Date(emp.birthDate).getUTCFullYear() > 2000);
-empBornAfter2000.forEach(emp => console.log(emp.getFullName()));
+let empBornAfter2000 = employeeArray.filter(emp => emp.getFullName() && new Date(emp.birthDate).getUTCFullYear() > 2000).map(e=>e.getFullName());
+empBornAfter2000.forEach(empName => console.log(empName);
